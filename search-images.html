@@ -1,0 +1,52 @@
+<!-- 
+ ACTIVIDAD 1: DISEÑAR UN MOTOR DE BÚSQUEDA DE IMÁGENES EN GOOGLE 
+-->
+<!DOCTYPE html>
+<!-- DOCTYPE: decirle al navegador web que versión de html usar-->
+<html lang="en"> 
+    <!-- comienzo de la página, etiqueta html con atributo adicional lang
+    lo que indica que la página está escrita en idioma inglés
+    útil para motores de búsqueda -->
+    <head>
+    <!-- HEAD/CABECERA: Describe cosas que no están en el cuerpo principal de la página web-->
+        <title>Imágenes de Google</title> <!--Título de la página web, se visualiza en la pestaña-->
+	<link rel="icon" href="https://ik.imagekit.io/julio00004/webpage/google_icon.ico?updatedAt=1751495131588"><!--icono en pestaña-->
+      	<link rel="stylesheet" href="style2.css">
+	<script src="javascript.js"></script>
+    </head>
+  <body>
+	<div id="div3">
+        <a href="index.html">
+            Regresar a página principal<br>
+            <!-- a href: abreviation hyperlink reference-->
+        </a>
+	</div>
+        <img src="https://ik.imagekit.io/julio00004/webpage/google%20imagenes.JPG?updatedAt=1751487605508" height="132" width="312" 
+	title="logo oficial Google imagenes">
+	<div>
+            <input id=selec_imagen type="file" onchange="obtenerNombre()" accept="image/*">
+            <!-- input: Entrada de datos
+             placeholder: sugerencia en cuadro de texto, 
+             se visualiza antes de escribir texto-->
+	<div id="contenedor_imagen"></div>
+<script>
+    	const imagenInput = document.getElementById('selec_imagen');
+    	const imagenContainer = document.getElementById('contenedor_imagen');
+	imagenInput.addEventListener('change', function(event) {
+      	const archivoSeleccionado = event.target.files[0];
+
+      if (archivoSeleccionado) {
+        const img = document.createElement('img');
+        img.src = URL.createObjectURL(archivoSeleccionado);
+        img.style.maxWidth = '200px'; // Opcional: Limitar el tamaño de la imagen
+        imagenContainer.innerHTML = ''; // Limpiar contenedor anterior
+        imagenContainer.appendChild(img);
+      }
+    });
+</script>
+        </div>
+    <div>
+        <input id="button" type="submit" class="Buscar" value="Buscar con Google" onClick="search_image()"> <!-- genera botón para enviar datos-->
+    </div>
+  </body>
+</html> <!-- fin del contenido de la página-->

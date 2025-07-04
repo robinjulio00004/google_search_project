@@ -1,0 +1,52 @@
+<!-- 
+ ACTIVIDAD 1: DISEÑAR UN MOTOR DE BÚSQUEDA DE GOOGLE
+-->
+<!DOCTYPE html>
+<!-- DOCTYPE: decirle al navegador web que versión de html usar-->
+<html lang="en"> 
+    <!-- comienzo de la página, etiqueta html con atributo adicional lang
+    lo que indica que la página está escrita en idioma inglés
+    útil para motores de búsqueda -->
+    <head>
+    <!-- HEAD/CABECERA: Describe cosas que no están en el cuerpo principal de la página web-->
+        <title>Google</title> <!--Título de la página web, se visualiza en la pestaña-->
+	<link rel="icon" href="https://ik.imagekit.io/julio00004/webpage/google_icon.ico?updatedAt=1751495131588"><!--icono en pestaña-->
+      	<link rel="stylesheet" href="style1.css"> <!--enlace a hoja de estilos-->
+	<script src="javascript.js"></script> <!--enlace a javascript-->
+    </head>
+  <body>
+	<div id="div3">
+	<a href="advanced-search.html">Búsqueda avanzada
+        <a href="search-images.html">
+            Imágenes<br>
+            <!-- a href: abreviation hyperlink reference-->
+        </a>
+	</div>
+        <img src="https://ik.imagekit.io/julio00004/webpage/logo_google.png?updatedAt=1751489773043" height="92" width="272" 
+	title="logo oficial Google">
+	<div>
+        <form>
+	</fieldset>
+            <input id=texto type="text" placeholder="Escribe lo que quieres buscar" name="Búsqueda de Google">
+            <!-- input: Entrada de datos
+             placeholder: sugerencia en cuadro de texto, 
+             se visualiza antes de escribir texto-->
+    	</form>
+        </div>
+    <div id="div2">
+        <input id="button1" type="submit" class="Buscar" value="Buscar con Google" onClick="goURL()"> <!-- genera botón para enviar datos-->
+      	<input id="button2" type="submit" class="Suerte" value="Voy a tener suerte" onClick="mi_funcion()"> <!-- genera botón para enviar datos-->
+    </div>
+  </body>
+<script>
+      // evento que detecta tecla Enter
+	let itexto = document.getElementById("texto");
+      itexto.addEventListener("keypress", function (event) {
+         // detect event key
+         if (event.keyCode == 13) {
+   	event.preventDefault();
+	goURL();
+         }
+      });
+</script>
+</html> <!-- fin del contenido de la página-->

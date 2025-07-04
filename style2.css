@@ -1,0 +1,24 @@
+            body{ /*cuerpo html*/
+            text-align: center;
+            }
+            div{ /*botón y seleccionar archivo*/
+            padding: 20px;text-align: center;
+            }
+            #div3{ /*enlace inicio*/
+            padding: 5px;
+            text-align:right;
+            }
+            input[type='submit']{ /*botones*/
+            height:35px;
+            width:140px;
+            padding: 0 16px;
+	    color: #3F3F3F;
+            background: rgba(128,128,128,0.055);
+            border:1px #ccc;
+}
+            input[type='submit']:hover{ /*cursor pasa en botones*/
+            cursor:pointer;
+            user-select: none;
+            border:1px solid gray;
+            border-radius: 4px;
+}

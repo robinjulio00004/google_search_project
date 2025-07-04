@@ -1,0 +1,50 @@
+            body{ /*cuerpo html*/
+            text-align: center;
+            }
+            div{ /*barra de búsqueda google*/
+            padding: 20px;
+            text-align: center;
+            }
+            #div2{ /*botones*/
+            padding: 10px;
+            text-align: center;
+            }
+            #div3{ /*enlace inicio*/
+            padding: 5px;
+            text-align:right;
+            }
+            a{ /*enlaces búsqueda avanzada e imégenes*/
+            margin: 5px;
+            }
+            input[type='text']{ /*barra de búsqueda de google*/
+	    height:50px;
+            width:575px;
+            padding: 10px 40px;
+            border:1px solid #ccc;
+            border-radius: 25px;
+            text-align: left;
+            text-indent:20px;
+            background-image:url(https://ik.imagekit.io/julio00004/webpage/searchicon.png?updatedAt=1751415156596);
+            background-repeat:no-repeat;
+            background-size:16px;
+            background-position:11px 16px;
+            padding-left:20px;
+	    box-sizing:border-box;
+            }
+            input[type='text']:hover{ /*cursor pasa en barra de búsqueda de google*/
+            box-shadow:0 0 1px 1px #ccc;
+            }
+            input[type='submit']{ /*botones*/
+            height:35px;
+            width:140px;
+            padding: 0 16px;
+	    color: #3F3F3F;
+            background: rgba(128,128,128,0.055);
+            border:1px #ccc;
+}
+            input[type='submit']:hover{ /*cursor pasa en botones*/
+            cursor:pointer;
+            user-select: none;
+            border:1px solid gray;
+            border-radius: 4px;
+}

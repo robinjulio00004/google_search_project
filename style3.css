@@ -1,0 +1,46 @@
+            body{ /*cuerpo html*/
+	    padding:11px;
+            text-align: left;
+            }
+            div{ /*divisiones html*/
+	    padding:5px;
+            text-align: left;
+            }
+            #div2{ /*botón y seleccionar archivo*/
+            padding: 20px;
+	    text-align: center;
+            }
+            #div4{ /*enlace inicio*/
+	    padding:0px;
+            text-align:right;
+            }
+            #text{ /*texto búsqueda avanzada*/
+	    padding:11px 25px;
+            text-align:left;
+	    color:#d93025;
+	    font-size: 20px;
+	    font-family: Arial,sans-serif;
+            }
+            input[type='text']{ /*botón*/
+            height:20px;
+            width:545px;
+	    padding:0px;
+	    }
+            input[type='submit']{ /*botón*/
+            height:35px;
+            width:140px;
+	    color: white;
+            background-color:#4d90fe;
+	    border:none;
+	    }
+            input[type='submit']:hover{ /*cursor pasa en botón*/
+            user-select: none;
+	    background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
+            border:1px solid #3079ed;
+	    }
+	    label{/*eqituetas de texto*/
+  	    display: inline-block;
+  	    width: 185px;
+  	    padding:0 10px;
+	    }
+

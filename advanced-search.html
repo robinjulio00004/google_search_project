@@ -1,0 +1,45 @@
+<!--ACTIVIDAD 1: DISEÑAR UN MOTOR DE BÚSQUEDA DE GOOGLE-->
+<!DOCTYPE html>
+<!-- DOCTYPE: decirle al navegador web que versión de html usar-->
+<html lang="en"> 
+    <!-- comienzo de la página, etiqueta html con atributo adicional lang
+    lo que indica que la página está escrita en idioma inglés
+    útil para motores de búsqueda -->
+    <head>
+    <!-- HEAD/CABECERA: Describe cosas que no están en el cuerpo principal de la página web-->
+        <title>Búsqueda avanzada de Google</title> <!--Título de la página web, se visualiza en la pestaña-->
+	<link rel="icon" href="https://ik.imagekit.io/julio00004/webpage/google_icon.ico?updatedAt=1751495131588"><!--icono en pestaña-->
+      	<link rel="stylesheet" href="style3.css"> <!--enlace a hoja de estilos-->
+	<script src="javascript.js"></script> <!--enlace a javascript-->
+    </head>
+  <body>
+        <img src="https://ik.imagekit.io/julio00004/webpage/logo_google.png?updatedAt=1751489773043" height="24" width="74" 
+	title="logo oficial Google">
+	<div id="div4">
+        <a href="index.html">
+            Regresar a página principal<br>
+            <!-- a href: abbraviation hyperlink reference-->
+	</a>
+	</div>
+	<h1 id="text">Búsqueda Avanzada</h1>
+	<div id="div1">
+         <form>
+	<div>	<label for="texto1">todas estas palabras:</label>
+		<input id=texto1 type="text" placeholder="Criterio de búsqueda 1" name="Criterio 1">
+	</div>
+	<div>	<label for="texto2">esta palabra o frase exactas:</label>
+		<input id=texto2 type="text" placeholder="Criterio de búsqueda 2" name="Criterio 2">
+	</div>
+	<div>	<label for="texto3">cualquiera de estas palabras:</label>
+		<input id=texto3 type="text" placeholder="Criterio de búsqueda 3" name="Criterio 3">
+	</div>
+	<div>	<label for="texto4">ninguna de estas palabras:</label>
+		<input id=texto4 type="text" placeholder="Criterio de búsqueda 4" name="Criterio 4">
+	</div>
+    	</form>
+        </div>
+    <div id="div2">
+        <input id="button" type="submit" class="Buscar" value="Búsqueda avanzada" onClick="goSearch()"/> <!-- genera botón para enviar datos-->
+    </div>
+  </body>
+</html> <!-- fin del contenido de la página-->
