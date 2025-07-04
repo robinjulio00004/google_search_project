@@ -1,6 +1,8 @@
 # google_search_project
 implement front-end inside HTML
-I´m Feeling Lucky button not implemented yet
+
+* I´m Feeling Lucky button not implemented yet
+** Google search images only search for name not the pixels on images
 
 
 The trademarks, logos and icons used in this project are property of Google, this project was made for educational purposes only.
