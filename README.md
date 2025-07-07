@@ -1,5 +1,5 @@
 # google_search_project
-implement front-end inside HTML
+Example Google Search webpage implement front-end: HTML,CSS3 & javascript - made by me
 
 https://robinjulio00004.github.io/google_search_project/
 
